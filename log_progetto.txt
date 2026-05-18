@@ -1,0 +1,2 @@
+﻿Registro Modifiche Software Doganale
+Log: 2026-05-18T10:15:00 - primo commit del mockup
