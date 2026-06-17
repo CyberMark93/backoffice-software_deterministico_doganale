@@ -3,3 +3,4 @@ Log: 2026-05-18T10:15:00 - primo commit del mockup
 Log: 2026-05-25T14:30:00 - fix di esporta/stampa (stampava tutto non solo i doc compilati finali)
 Log: 2026-06-01T11:20:00 - commit sul documento. esportazione corretta dei documenti autocompilati e editabili
 Log: 2026-06-10T16:45:00 - Aggiunta confidenza. Riconciliato lo schema campi con la UI esistente, su base doc 03 come arbitro.
+Log: 2026-06-17T09:30:00 - in questo commit troviamo : split html/css/js del documento per Lavorare meglio Utilizzando meno contesto
