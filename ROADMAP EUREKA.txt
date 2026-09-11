@@ -1,0 +1,21 @@
+FUNZIONAMENTO:
+il mockup e`splittato in 3 file per funzionare utilizzando meno contesto di claude (splittato in: eureka.css, eureka.html, eureka.js)
+
+ Con nuova pratica è possibile creare una pratica completamente nuova che verrà poi salvata Nella schermata pratica terminate, raggiungibile da pulsante dashboard in alto. Le pratiche vengono salvate in localstorage e ogni pratica viene salvata solo quando è terminata, in tutti gli altri casi non verrà mai salvata. Gli spedizionieri vengono salvati e ogni volta possono essere aggiunti dei nuovi. Le pratiche terminate non possono essere riprese in mano, ma solamente eliminate. 
+Con "cerca ID fornitore" si può inserire l'i D Del fornitore che riporterà direttamente la pratica esatta salvata nello storage .
+
+- Con IL BUTTON "svuota tutto", vengono eliminati tutti i dati salvati in local storage e quindi tutte le pratiche terminate che ora invece si vedono in quanto le ho provate a compilare io per provare il funzionamento. 
+
+
+Avrei continuato con quest'ordine:
+
+- ricerca BUG minori e FIX dei tali.
+- prove con altri documenti d'esempio.
+- sistemazione/ gestione menù a sinistra: Listino descrizioni, spedizionieri, storico attività .
+- PROVARE logica dietro:(☒ Non esistono legami fra il sottoscritto e la società venditrice.
+☐ Esistono legami, ma tali relazioni non hanno influenzato il prezzo di transazione.
+) se funzionante.
+- implementato logica RBAC.
+
+
+Io inserirei anche la possibilità di aggiungere uno spedizioniere Con un Dropdown Menù (dato che vengono salvati) 

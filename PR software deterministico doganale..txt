@@ -1,0 +1,21 @@
+📝 Summary
+Questa Pull Request rilascia formalmente l'architettura core, l'interfaccia utente responsive e la logica di gestione dinamica della piattaforma software deterministico doganale. Import Hub. Il sistema centralizza l'amministrazione, il controllo documentale e lo sdoganamento delle spedizioni, ottimizzando i flussi di importazione e strutturando i layer fondamentali per l'analisi e la validazione dei dati doganali.
+
+🛠️ Elenco delle modifiche principali
+Frontend & UI (software deterministico doganale.html, software deterministico doganale.css): Sviluppo dell'intera interfaccia utente multi-colonna predisposta in modalità dark-mode nativa (con toggle dinamico per la modalità Light). Implementazione dell'architettura a macro-aree, inclusi il sistema di autenticazione differenziato (User/Admin), l'area di dropzone interattiva per il caricamento dei file, la colonna centrale di anteprima con stepper per i moduli, e la sezione di controllo dei campi dotata di legenda cromatica per tracciare l'origine dei dati e lo stato dei conflitti.
+
+Data Engine & Business Logic (software deterministico doganale.js): Integrazione delle librerie di supporto (PDF.js) e predisposizione del motore JavaScript per il riconoscimento automatico dei documenti di importazione (Invoice, Packing List, HAWB). Sviluppo dei moduli di gestione locale per il Listino descrizioni (corrispondenze codici HS), l'anagrafica degli Spedizionieri, lo Storico attività (Audit log) e le logiche di memorizzazione/reset della sessione demo.
+
+Modularità e Gestione Conflitti: Strutturazione di un sistema di tracciamento visivo per evidenziare l'origine del dato (da documento, anagrafica, regola/default, listino o manuale) e identificare tempestivamente le anomalie (conflitti tra documenti, campi da confermare o non popolati).
+
+💡 Stato Attuale & Roadmap Consigliata
+Il nucleo architetturale e i moduli di visualizzazione/gestione della pratica sono pronti ed operativi su base mockup consolidata nel browser. Per le fasi successive dello sviluppo, si segnala la seguente pianificazione di interventi già predisposta:
+
+Integrazione dell'Engine di Estrazione Dati: Sostituzione delle logiche mock di lettura dei PDF con un reale modulo di parsing OCR/AI per estrarre dinamicamente i valori da Invoice, Packing List e HAWB.
+
+Estensione dei Pannelli Gestionali: Implementazione delle logiche CRUD complete e persistenti per il Listino merci e l'elenco degli Spedizionieri, collegandoli ad endpoint API dedicati.
+
+Finalizzazione del Flusso di Export: Attivazione e collegamento dei sistemi di esportazione nativa (funzionalità del tasto Stampa / PDF) e dei flussi di invio telematico doganale al trigger del pulsante Finalizza / Valida.
+
+📌 Note di Consegna Fine Tirocinio
+Con l'apertura di questa Pull Request si formalizza il rilascio definitivo e la consegna di tutte le mansioni architetturali assegnatemi durante il periodo di stage. Il codice del mockup è pienamente funzionante in ambiente locale, opportunamente commentato e pronto per la Code Review e il merge finale nel branch principale.
